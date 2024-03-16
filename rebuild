@@ -9,4 +9,5 @@ sudo nixos-rebuild switch -I ~/github.com/nixos-configs/configuration.nix &>nixo
  cat nixos-switch.log | grep --color error && false)
 gen=$(nixos-rebuild list-generations | grep current)
 git commit -am "$gen"
+git push
 popd
