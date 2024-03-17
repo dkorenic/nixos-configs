@@ -119,7 +119,7 @@
     direnv
     vscode
     gparted
-    nvim
+    nvimERROR
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
