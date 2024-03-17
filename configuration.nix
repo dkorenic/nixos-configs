@@ -7,7 +7,8 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      #./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
     ];
 
   # Bootloader.
@@ -19,6 +20,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+
+  system.autoUpgrade.enable  = true;
+  system.autoUpgrade.allowReboot  = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Zagreb";
@@ -100,6 +104,7 @@
       opera
       google-chrome
       gittyup
+      lunarvim
     ];
   };
 
@@ -119,7 +124,6 @@
     direnv
     vscode
     gparted
-    nvimERROR
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
