@@ -100,7 +100,6 @@
       opera
       google-chrome
       gittyup
-      nvim
     ];
   };
 
@@ -120,6 +119,7 @@
     direnv
     vscode
     gparted
+    nvim
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
