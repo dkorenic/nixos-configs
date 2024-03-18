@@ -124,6 +124,7 @@
     direnv
     vscode
     gparted
+    neovim
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
@@ -148,6 +149,7 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+  programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
