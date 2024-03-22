@@ -124,7 +124,7 @@
     direnv
     vscode
     gparted
-    #neovim
+    neovim
     fsearch
   ];
 
